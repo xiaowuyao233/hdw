@@ -5,18 +5,18 @@ HOSTNAME="127.0.0.1"
 PORT="3306"
 USERNAME="root"
 PASSWORD=""
-DBNAME="zsky"  
+DBNAME="zsky"
 
 if [ $(id -u) != "0" ]; then
     echo "当前非root用户登录系统， 请使用root用户运行此脚本!"
     exit 1
-fi	
+fi
 \cp -rpf /usr/share/zoneinfo/Asia/Chongqing /etc/localtime
-systemctl stop firewalld.service  
-systemctl disable firewalld.service   
-systemctl stop iptables.service  
-systemctl disable iptables.service  
-setenforce 0  
+systemctl stop firewalld.service
+systemctl disable firewalld.service
+systemctl stop iptables.service
+systemctl disable iptables.service
+setenforce 0
 sed -i s/"SELINUX=enforcing"/"SELINUX=disabled"/g  /etc/selinux/config
 cat << EOF > /etc/sysctl.conf
 net.ipv4.tcp_syn_retries = 1
