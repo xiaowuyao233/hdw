@@ -4,7 +4,7 @@
 ```Bash
 yum -y install git 
 
-git  clone https://gitee.com/SouSuoYinQing/zsky.git
+git  clone https://gitee.com/qianghongbao/zsky.git
 
 cd zsky&&sh zsky.sh
 ```
@@ -13,7 +13,7 @@ cd zsky&&sh zsky.sh
 ```Bash
 apt-get -y install git 
 
-git  clone https://gitee.com/SouSuoYinQing/zsky.git
+git  clone https://gitee.com/qianghongbao/zsky.git
 
 cd zsky&&sh zsky_debian.sh
 ```
@@ -88,5 +88,4 @@ A：修改manage.py里的sql语句 'SELECT info_hash,create_time FROM film order
 **Q：我觉得这程序非常垃圾，怎么卸载？**
 
 A：执行 mysql -uroot -p 将提示输入密码，输入密码后进入mysql管理界面，执行 drop database zsky;  （注意必须带分号)这样就删除了数据库，然后执行yum -y remove nginx mariadb mariadb-devel mariadb-server redis&&rm -rf /root/zsky 就成功卸载此程序了
-
 
