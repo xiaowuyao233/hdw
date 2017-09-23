@@ -4,18 +4,18 @@
 ```Bash
 yum -y install git 
 
-git  clone https://github.com/xiaowuyao233/zsky-hdw
+git  clone https://github.com/xiaowuyao233/hdw
 
-cd zsky-hdw&&sh zsky.sh
+cd hdw&&sh zsky.sh
 ```
 
 >此一键包只在Debian8+系统有效，注意：提示输入数据库密码的时候直接回车
 ```Bash
 apt-get -y install git 
 
-git  clone https://github.com/xiaowuyao233/zsky-hdw
+git  clone https://github.com/xiaowuyao233/hdw
 
-cd zsky-hdw&&sh zsky_debian.sh
+cd hdw&&sh zsky_debian.sh
 ```
 
 
